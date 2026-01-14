@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://eee-inventory-backend.koyeb.app';
 
 document.getElementById('loginForm').addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -32,3 +32,4 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     errorDiv.textContent = 'Server error. Try again.';
   }
 });
+
