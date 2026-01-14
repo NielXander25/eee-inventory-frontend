@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - EEE Inventory Management System</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="system-title">EEE Inventory Management System</div>
+    <div class="user-menu">
+      <button class="user-button" id="userButton">
+        <span id="userName">User</span> ▼
+      </button>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="#" onclick="loadContent('profile'); return false;">My Profile</a>
+        <a href="#" id="addAdminLink" style="display:none;" onclick="loadContent('add-admin'); return false;">Add Admin</a>
+        <a href="#" id="manageAdminsLink" style="display:none;" onclick="loadContent('manage-admins'); return false;"> Manage Admins</a>
+
+        <a href="#" onclick="logout(); return false;">Logout</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <a href="#" onclick="loadContent('profile'); return false;">Profile</a>
+    <a href="#" onclick="loadContent('category'); return false;">Category</a>
+    <a href="#" onclick="loadContent('product'); return false;">Product</a>
+    <a href="#" onclick="loadContent('customer'); return false;">Customer</a>
+    <a href="#" onclick="loadContent('order'); return false;">Order</a>
+    <a href="#" onclick="loadContent('manage-orders'); return false;">Manage Orders</a>
+    <a href="#" onclick="logout(); return false;">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <div id="contentArea">
+      <h1>Welcome to EEE Inventory Management System</h1>
+    </div>
+  </div>
+
+  <script src="../assets/js/all-functions.js"></script>
+</body>
+</html>
