@@ -1,5 +1,5 @@
 // const API_URL = 'http://localhost:4000/api';
-const API_URL = 'https://YOUR-BACKEND.koyeb.app';
+const API_URL = 'https://eee-inventory-backend.koyeb.app';
 let token = null;
 let currentUser = null;
 let orderProducts = [];
@@ -1099,4 +1099,5 @@ async function deleteAdmin(adminId, adminName) {
   } else {
     alert(data.message);
   }
+
 }
