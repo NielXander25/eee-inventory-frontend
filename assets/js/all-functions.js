@@ -1,5 +1,5 @@
 // const API_URL = 'http://localhost:4000/api';
-const API_URL = 'https://eee-inventory.onrender.com/';
+const API_URL = 'https://eee-inventory.onrender.com/api';
 let token = null;
 let currentUser = null;
 let orderProducts = [];
@@ -1101,4 +1101,5 @@ async function deleteAdmin(adminId, adminName) {
   }
 
 }
+
 
