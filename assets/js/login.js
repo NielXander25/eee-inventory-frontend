@@ -1,4 +1,4 @@
-const API_URL = 'https://eee-inventory-backend.koyeb.app';
+const API_URL = 'https://eee-inventory.onrender.com/';
 
 document.getElementById('loginForm').addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -32,4 +32,5 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     errorDiv.textContent = 'Server error. Try again.';
   }
 });
+
 
